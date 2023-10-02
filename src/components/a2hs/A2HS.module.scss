@@ -9,7 +9,7 @@
 .A2HS {
   background-color: var(--primary-block-color);
   border: var(--border);
-  border-radius: var(--border-radius);
+  // border-radius: var(--border-radius);
   box-sizing: border-box;
   color: var(--primary-text-color);
   display: block;
@@ -17,6 +17,7 @@
   padding: 1rem 2rem;
   text-align: center;
   width: 100%;
+  margin-top: 100%;
 
   span,
   svg {

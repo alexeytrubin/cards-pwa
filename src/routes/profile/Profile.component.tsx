@@ -1,28 +1,28 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'components/image';
-import Icon from 'components/icon';
-import Placeholder from 'components/placeholder';
-import { useUser } from 'hooks/user';
-import styles from './Profile.module.scss';
+// import Image from 'components/image';
+// import Icon from 'components/icon';
+// import Placeholder from 'components/placeholder';
+// import { useUser } from 'hooks/user';
+// import styles from './Profile.module.scss';
 
-const {
-  profile,
-  profileMain,
-  profilePicture,
-  profileContent,
-  followersIcon,
-  followersPlaceholder,
-  about
-} = styles;
+// const {
+//   profile,
+//   profileMain,
+//   profilePicture,
+//   profileContent,
+//   followersIcon,
+//   followersPlaceholder,
+//   about
+// } = styles;
 
 export default function Profile(): JSX.Element {
-  const {
-    name,
-    bio,
-    avatar_url,
-    followers
-  } = useUser();
+  // const {
+  //   name,
+  //   bio,
+  //   avatar_url,
+  //   followers
+  // } = useUser();
 
   return (
     <>
@@ -30,7 +30,7 @@ export default function Profile(): JSX.Element {
         <title>Profile</title>
         <meta name="robots" content="noindex" />
       </Head>
-      <main className={ profile }>
+      { /* <main className={ profile }>
         <div className={ profileMain }>
           <Image
             isPlaceholder={ !avatar_url }
@@ -68,8 +68,8 @@ export default function Profile(): JSX.Element {
                         Pellentesque dictum in nunc eu porttitor.
                         Integer vitae justo sit amet metus malesuada eleifend.
           </p>
-        </div>
-      </main>
+        </div> */ }
+      { /* </main> */ }
     </>
   );
 }

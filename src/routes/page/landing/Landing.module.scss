@@ -5,6 +5,7 @@
 .wrapper {
   background-color: #fcebda;
   padding: var(--header-height) 0 0;
+  height: 100vh;
 
   @include theme.dark-mode {
     --primary-text-color: #f2f2f7;
@@ -46,9 +47,9 @@
 
   &NavigationWrapper {
     display: block;
-    margin: 0 auto;
     text-align: center;
-    padding: var(--content-padding) 0;
+    height: 55vh;
+    // padding: var(--content-padding) 0;
 
     a {
       --button-text-color: #f2f2f7;

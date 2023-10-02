@@ -15,7 +15,7 @@ const DISPLAY_STANDALONE = 'display-mode: standalone';
 
 const {
   A2HS: A2HSWrapper,
-  A2HSControls,
+  // A2HSControls,
   button
 } = styles;
 
@@ -102,7 +102,7 @@ export default class A2HS extends PureComponent<unknown, InstallState> {
                 </button>
               )
           }
-          <div className={ A2HSControls }>
+          { /* <div className={ A2HSControls }>
             <button
               type="button"
               aria-label="close notice"
@@ -110,7 +110,7 @@ export default class A2HS extends PureComponent<unknown, InstallState> {
             >
               Maybe later
             </button>
-          </div>
+          </div> */ }
         </figure>
       );
     }

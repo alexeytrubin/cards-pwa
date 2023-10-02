@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { ThemeProvider } from 'contexts/theme';
 import Header from 'components/header';
-import Footer from 'components/footer';
+// import Footer from 'components/footer';
 import NotificationList from 'components/notificationList';
 import store from 'stores';
 import { Provider } from 'react-redux';
@@ -37,7 +37,6 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
           <NotificationList />
           <Header />
           <Component { ...pageProps } />
-          <Footer />
         </ThemeProvider>
       </Provider>
     </>
