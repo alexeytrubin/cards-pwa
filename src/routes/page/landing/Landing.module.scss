@@ -5,7 +5,7 @@
 .wrapper {
   background-color: #fcebda;
   padding: var(--header-height) 0 0;
-  height: 100vh;
+  height: 80vh;
 
   @include theme.dark-mode {
     --primary-text-color: #f2f2f7;
