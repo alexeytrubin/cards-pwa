@@ -5,13 +5,16 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 10px;
   font-weight: 500;
   justify-content: center;
-  padding:
-    var(--content-padding)
-    var(--content-padding)
-    calc(var(--header-items-height) + var(--content-padding));
+  text-align: center;
+  // padding:
+  //   var(--content-padding)
+  //   var(--content-padding)
+  //   calc(var(--header-items-height) + var(--content-padding));
   width: 100%;
 
   p {

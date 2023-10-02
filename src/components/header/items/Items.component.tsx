@@ -10,8 +10,8 @@ const {
 } = styles;
 
 const links = [
-  { name: 'Home', url: '/', alias: [] },
-  { name: 'Pages', url: '/pages', alias: ['/[page]'] },
+  { name: 'Cards', url: '/', alias: [] },
+  { name: 'Install', url: '/install', alias: []},
   { name: 'Profile', url: '/profile', alias: [] }
 ];
 
@@ -20,7 +20,7 @@ export default function Items(): JSX.Element {
 
   return (
     <ul className={ items }>
-      { links.map(({ name, url, alias }) => (
+      { links.map(({ name, url, alias }: {name: string, url: string, alias: Array<string>}) => (
         <li
           key={ name }
           className={

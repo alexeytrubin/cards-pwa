@@ -1,22 +1,22 @@
 import React from 'react';
 import Head from 'next/head';
 import Landing from 'routes/page/landing';
-import A2HS from 'components/a2hs';
-import Sidebar from 'components/sidebar';
-import Html from 'components/html';
-import { usePageData, usePageDetails } from 'hooks/page';
+// import A2HS from 'components/a2hs';
+// import Sidebar from 'components/sidebar';
+// import Html from 'components/html';
+import { usePageDetails } from 'hooks/page';
 import { injectClassNames } from 'utils/css';
 import styles from './Page.module.scss';
 
 const {
   page,
-  pageLanding,
-  pageContent,
-  placeholder
+  pageLanding
+  // pageContent,
+  // placeholder
 } = styles;
 
 type PageProps = {
-    isLanding?: boolean
+  isLanding?: boolean
 };
 
 export const addTitleTags = (title: string): JSX.Element => {
@@ -49,7 +49,7 @@ export const addDescriptionTag = (description: string): JSX.Element => {
 export default function Page(props: PageProps): JSX.Element {
   const { isLanding } = props;
   const { title = '', description = '' } = usePageDetails();
-  const { content = '' } = usePageData();
+  // const { content = '' } = usePageData();
 
   const classNames = injectClassNames(page, [pageLanding, isLanding]);
 
@@ -62,9 +62,9 @@ export default function Page(props: PageProps): JSX.Element {
       </Head>
       <main className={ classNames }>
         { isLanding && <Landing /> }
-        <section>
+
+        { /* <section>
           <div className={ pageContent }>
-            <A2HS />
             <div className={ pageContent }>
               { content
                 ? <Html content={ content } />
@@ -79,7 +79,7 @@ export default function Page(props: PageProps): JSX.Element {
             </div>
           </div>
           <Sidebar />
-        </section>
+        </section> */ }
       </main>
     </>
   );
